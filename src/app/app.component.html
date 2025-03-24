@@ -1,5 +1,11 @@
+<div style="text-align: center;">
+  <h1>{{title}}</h1>
+  <a [href]="bridgeLabzUrl" target="_blank" rel="noopener noreferrer">
+    <img src="https://gumlet.assettype.com/freepressjournal%2F2021-06%2F32af7f9f-b603-4e12-8340-ba2425bb5ee8%2FBridgeLabz.PNG" alt="BridgeLabz Logo" width="200px">
+  </a>
+</div>
 
-<h1>{{ title }}</h1>
-
-<!-- Bind the click event to the method openBridgeLabzSite -->
-<img src="https://gumlet.assettype.com/freepressjournal%2F2021-06%2F32af7f9f-b603-4e12-8340-ba2425bb5ee8%2FBridgeLabz.PNG" alt="BridgeLabz Logo" (click)="openBridgeLabzSite()" style="cursor: pointer" />
+<div style="text-align: center; margin-top: 20px;">
+  <input type="text" [value]="userName" (input)="onInputChange($event)" placeholder="Enter your name">
+  <p>Hello, {{ userName }} from BridgeLabz!</p>
+</div>

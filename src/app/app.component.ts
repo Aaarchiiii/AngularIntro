@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello from BridgeLabz';
-  logoUrl = 'assets/images/BridgeLabz.jpg';  // Property holding the image URL
+  logoUrl = 'https://gumlet.assettype.com/freepressjournal%2F2021-06%2F32af7f9f-b603-4e12-8340-ba2425bb5ee8%2FBridgeLabz.PNG';  // Property holding the image URL
+  bridgeLabzUrl = 'https://www.bridgelabz.com';  // BridgeLabz website URL
+
+  // Method to open BridgeLabz URL in a new tab
+  openBridgeLabzSite() {
+    window.open(this.bridgeLabzUrl, '_blank');  // Opens the URL in a new tab
+  }
 }
